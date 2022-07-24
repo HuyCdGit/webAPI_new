@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "mNA4K9gAzpYt0FjJoE98of7+gB1hvc4VeKLXsvP0JfBc6kgSYFqWYdjCcC/y0nFpdYt6Q4F4KjFGq/j991WufA==",
+  "dgSpecHash": "XzadcYHnx6JPxv5CV7QBINI61hC5Z1EOVJ2MsQGzB1GiEM/VOd8Jx/7uElyz2drtQQKjSkGftDsBu02NyzGHPw==",
   "success": true,
   "projectFilePath": "/Users/huynguyen/Desktop/webAPI_new/webAPI/webAPI.csproj",
   "expectedPackageFiles": [
+    "/Users/huynguyen/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
+    "/Users/huynguyen/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/jwt/10.0.0-beta5/jwt.10.0.0-beta5.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.6/microsoft.aspnetcore.authentication.jwtbearer.6.0.6.nupkg.sha512",
-    "/Users/huynguyen/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/huynguyen/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.entityframeworkcore/6.0.7/microsoft.entityframeworkcore.6.0.7.nupkg.sha512",

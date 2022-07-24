@@ -1,0 +1,15 @@
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/Debug/net6.0/webAPI.Dataservice.csproj.AssemblyReference.cache
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/Debug/net6.0/webAPI.Dataservice.GeneratedMSBuildEditorConfig.editorconfig
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/Debug/net6.0/webAPI.Dataservice.AssemblyInfoInputs.cache
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/Debug/net6.0/webAPI.Dataservice.AssemblyInfo.cs
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/Debug/net6.0/webAPI.Dataservice.csproj.CoreCompileInputs.cache
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/bin/Debug/net6.0/webAPI.Dataservice.deps.json
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/bin/Debug/net6.0/webAPI.Dataservice.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/bin/Debug/net6.0/webAPI.Dataservice.pdb
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/bin/Debug/net6.0/webAPI.Entites.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/bin/Debug/net6.0/webAPI.Entites.pdb
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/Debug/net6.0/webAPI.Dataservice.csproj.CopyComplete
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/Debug/net6.0/webAPI.Dataservice.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/Debug/net6.0/refint/webAPI.Dataservice.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/Debug/net6.0/webAPI.Dataservice.pdb
+/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/Debug/net6.0/ref/webAPI.Dataservice.dll

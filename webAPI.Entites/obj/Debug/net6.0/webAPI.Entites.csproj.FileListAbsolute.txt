@@ -1,0 +1,12 @@
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/bin/Debug/net6.0/webAPI.Entites.deps.json
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/bin/Debug/net6.0/webAPI.Entites.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/bin/Debug/net6.0/webAPI.Entites.pdb
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/obj/Debug/net6.0/webAPI.Entites.csproj.AssemblyReference.cache
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/obj/Debug/net6.0/webAPI.Entites.GeneratedMSBuildEditorConfig.editorconfig
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/obj/Debug/net6.0/webAPI.Entites.AssemblyInfoInputs.cache
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/obj/Debug/net6.0/webAPI.Entites.AssemblyInfo.cs
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/obj/Debug/net6.0/webAPI.Entites.csproj.CoreCompileInputs.cache
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/obj/Debug/net6.0/webAPI.Entites.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/obj/Debug/net6.0/refint/webAPI.Entites.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/obj/Debug/net6.0/webAPI.Entites.pdb
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/obj/Debug/net6.0/ref/webAPI.Entites.dll

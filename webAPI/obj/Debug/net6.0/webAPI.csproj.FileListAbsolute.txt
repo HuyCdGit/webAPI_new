@@ -66,3 +66,9 @@
 /Users/huynguyen/Desktop/webAPI_new/webAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.Filters.dll
 /Users/huynguyen/Desktop/webAPI_new/webAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.Filters.Abstractions.dll
 /Users/huynguyen/Desktop/webAPI_new/webAPI/bin/Debug/net6.0/System.Text.Json.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI/bin/Debug/net6.0/AutoMapper.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI/bin/Debug/net6.0/webAPI.Dataservice.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI/bin/Debug/net6.0/webAPI.Entites.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI/bin/Debug/net6.0/webAPI.Dataservice.pdb
+/Users/huynguyen/Desktop/webAPI_new/webAPI/bin/Debug/net6.0/webAPI.Entites.pdb

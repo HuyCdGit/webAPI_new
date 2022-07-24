@@ -4,14 +4,76 @@
     "/Users/huynguyen/Desktop/webAPI_new/webAPI/webAPI.csproj": {}
   },
   "projects": {
-    "/Users/huynguyen/Desktop/webAPI_new/webAPI/webAPI.csproj": {
+    "/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/webAPI.Dataservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/huynguyen/Desktop/webAPI_new/webAPI/webAPI.csproj",
-        "projectName": "webAPI",
-        "projectPath": "/Users/huynguyen/Desktop/webAPI_new/webAPI/webAPI.csproj",
+        "projectUniqueName": "/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/webAPI.Dataservice.csproj",
+        "projectName": "webAPI.Dataservice",
+        "projectPath": "/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/webAPI.Dataservice.csproj",
         "packagesPath": "/Users/huynguyen/.nuget/packages/",
-        "outputPath": "/Users/huynguyen/Desktop/webAPI_new/webAPI/obj/",
+        "outputPath": "/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/huynguyen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/webAPI.Entites.csproj": {
+                "projectPath": "/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/webAPI.Entites.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/webAPI.Entites.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/webAPI.Entites.csproj",
+        "projectName": "webAPI.Entites",
+        "projectPath": "/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/webAPI.Entites.csproj",
+        "packagesPath": "/Users/huynguyen/.nuget/packages/",
+        "outputPath": "/Users/huynguyen/Desktop/webAPI_new/webAPI.Entites/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/huynguyen/.nuget/NuGet/NuGet.Config"
@@ -37,7 +99,71 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/huynguyen/Desktop/webAPI_new/webAPI/webAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/huynguyen/Desktop/webAPI_new/webAPI/webAPI.csproj",
+        "projectName": "webAPI",
+        "projectPath": "/Users/huynguyen/Desktop/webAPI_new/webAPI/webAPI.csproj",
+        "packagesPath": "/Users/huynguyen/.nuget/packages/",
+        "outputPath": "/Users/huynguyen/Desktop/webAPI_new/webAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/huynguyen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/webAPI.Dataservice.csproj": {
+                "projectPath": "/Users/huynguyen/Desktop/webAPI_new/webAPI.DataService/webAPI.Dataservice.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "JWT": {
               "target": "Package",
               "version": "[10.0.0-beta5, )"
@@ -45,10 +171,6 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.6, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
