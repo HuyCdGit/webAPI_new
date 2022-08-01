@@ -1,6 +1,6 @@
 using System;
 using AutoMapper;
-
+using webAPI.Entites.Dbset;
 namespace webAPI
 {
     public class HeroProfile : Profile

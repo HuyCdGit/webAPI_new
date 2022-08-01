@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XzadcYHnx6JPxv5CV7QBINI61hC5Z1EOVJ2MsQGzB1GiEM/VOd8Jx/7uElyz2drtQQKjSkGftDsBu02NyzGHPw==",
+  "dgSpecHash": "5x5s+0J06ehmXvDJcYrxmcJzFKZYuxNI1yccG8VEjFCsE3SNMc8F2w3vjcz4A20D3Py9fBGxl5kjk4b06oEhkA==",
   "success": true,
   "projectFilePath": "/Users/huynguyen/Desktop/webAPI_new/webAPI/webAPI.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "/Users/huynguyen/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/jwt/10.0.0-beta5/jwt.10.0.0-beta5.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.6/microsoft.aspnetcore.authentication.jwtbearer.6.0.6.nupkg.sha512",
+    "/Users/huynguyen/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.7/microsoft.aspnetcore.cryptography.internal.6.0.7.nupkg.sha512",
+    "/Users/huynguyen/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.7/microsoft.aspnetcore.cryptography.keyderivation.6.0.7.nupkg.sha512",
+    "/Users/huynguyen/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/6.0.7/microsoft.aspnetcore.identity.entityframeworkcore.6.0.7.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
@@ -25,6 +28,8 @@
     "/Users/huynguyen/.nuget/packages/microsoft.extensions.dependencyinjection/6.0.0/microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.extensions.dependencymodel/3.1.6/microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
+    "/Users/huynguyen/.nuget/packages/microsoft.extensions.identity.core/6.0.7/microsoft.extensions.identity.core.6.0.7.nupkg.sha512",
+    "/Users/huynguyen/.nuget/packages/microsoft.extensions.identity.stores/6.0.7/microsoft.extensions.identity.stores.6.0.7.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.extensions.logging/6.0.0/microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/Users/huynguyen/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",

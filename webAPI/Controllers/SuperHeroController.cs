@@ -2,9 +2,10 @@
 using System.Reflection.Emit;
 using System.Net.Mime;
 using Microsoft.AspNetCore.Mvc;
-using webAPI.Services;
 using AutoMapper;
 using System;
+using webAPI.DataService.IConfiguration;
+using webAPI.Entites.Dbset;
 
 namespace webAPI.Controllers
 {
@@ -13,87 +14,86 @@ namespace webAPI.Controllers
 
     public class SupperHeroController : ControllerBase
     {
-        // private static List<SuperHero> heroes = new List<SuperHero>
-        //     {
-        //         // new SuperHero {
-        //         //     Id = 1,
-        //         //     Name = "spider man",
-        //         //     FirstName = "Peter",
-        //         //     LastName = "Parker",
-        //         //     Places = "New york city"
-        //         // },
-        //         // new SuperHero{
-        //         //     Id  = 2,
-        //         //     Name = "Ironman",
-        //         //     FirstName = "Tony",
-        //         //     LastName = "Stark",
-        //         //     Places = "Long Island"
-        //         // }
-        //     };
-        private readonly HeroService _heroService;
+        private IUnitOfWork _unitOfWork;
+        //private readonly HeroService _heroService;
+
         public readonly IMapper _mapper; 
         public SupperHeroController(
-            HeroService heroServices,
+            IUnitOfWork unitOfWork,
             IMapper mapper
         )
         {
             _mapper = mapper;
-            _heroService = heroServices;
+            _unitOfWork = unitOfWork;
         }
-        [HttpGet]   
-        public async Task<ActionResult<List<SuperHero>>> Get()
+        [HttpGet]
+        public async Task<IActionResult> GetHero()
         {
-            return Ok(await _heroService.showLst());
+            var users = await _unitOfWork.Heroes.All();
+            return Ok(users);
+            //return Ok(await _heroService.showLst());
         }
 
-        // [HttpGet("{id}")]
-        // public async Task<ActionResult<SuperHero>> Get(int id)
-        // {
-        //     var hero = await _context.SuperHeroes.FindAsync(id);
-        //     if(hero == null)
-        //     {
-        //         return BadRequest("cant found hero");
-        //     }
-        //     return Ok(hero);
-        // }
+        [HttpGet]
+        [Route("GetHero", Name = "GetHero")]
+        public async Task<IActionResult> GetHeroById(Guid id)
+        {
+            var hero = await _unitOfWork.Heroes.GetById(id);
+            return Ok(hero);
+            // var hero = await _context.SuperHeroes.FindAsync(id);
+            // if(hero == null)
+            // {
+            //     return BadRequest("cant found hero");
+            // }
+            // return Ok(hero);
+        }
 
         [HttpPost]
-        public async Task<ActionResult<SuperHero>> AddHero([FromBody]SuperHeroDto hero)
+        public async Task<IActionResult> AddHero(SuperHeroDto hero)
         {
-            var _MapperHero = _mapper.Map<SuperHero>(hero);
-            var props = _MapperHero.GetType().GetProperties();
-            foreach (var p in props)
-            {
-                Console.WriteLine(p.Name + ": " + p.GetValue(_MapperHero, null));
-            }
+            var _hero = new SuperHero();
+            _hero.Name = hero.Name;
+            _hero.FirstName = hero.FirstName;
+            _hero.LastName = hero.LastName;
+            _hero.Places = hero.Places;
+
+            await _unitOfWork.Heroes.Add(_hero);
+            await _unitOfWork.CompleteAsnyc();
+            return CreatedAtRoute("GetHero", new {id = _hero.Id}, hero); // return a 201
+            // var _MapperHero = _mapper.Map<SuperHero>(hero);
+            // var props = _MapperHero.GetType().GetProperties();
+            // foreach (var p in props)
+            // {
+            //     Console.WriteLine(p.Name + ": " + p.GetValue(_MapperHero, null));
+            // }
             
             
-            await _heroService.AddAsync(_MapperHero);
-            await _heroService.save();
-            return Ok(await _heroService.showLst());
+            // await _heroService.AddAsync(_MapperHero);
+            // await _heroService.save();
+            // return Ok(await _heroService.showLst());
         }
         
-        [HttpPut]
-        public async Task<ActionResult<List<SuperHero>>> UpdateHero(SuperHero request)
-        {
-            var hero = _heroService.findHero(request.Id);
+        // [HttpPut]
+        // public async Task<ActionResult<List<SuperHero>>> UpdateHero(SuperHero request)
+        // {
+        //     var hero = _heroService.findHero(request.Id);
 
-            if(hero == null)
-            {
-                return BadRequest("cant update hero");
-            }
+        //     if(hero == null)
+        //     {
+        //         return BadRequest("cant update hero");
+        //     }
 
-            //hero.Id = request.Id;
-            hero.Name = request.Name;
-            hero.FirstName = request.FirstName;
-            hero.LastName = request.LastName;
-            hero.Places = request.Places;
+        //     //hero.Id = request.Id;
+        //     hero.Name = request.Name;
+        //     hero.FirstName = request.FirstName;
+        //     hero.LastName = request.LastName;
+        //     hero.Places = request.Places;
 
-            // await _context.SaveChangesAsync();
-            _heroService.save();
-            return Ok(hero);
-            // await _context.SuperHeroes.ToListAsync()
-        }
+        //     // await _context.SaveChangesAsync();
+        //     _heroService.save();
+        //     return Ok(hero);
+        //     // await _context.SuperHeroes.ToListAsync()
+        // }
 
         // [HttpDelete("{id}")]
         // public async Task<ActionResult<List<SuperHero>>> DeleteHero(int id)
