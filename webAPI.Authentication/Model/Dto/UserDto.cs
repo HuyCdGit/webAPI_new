@@ -1,4 +1,4 @@
-namespace webAPI
+namespace webAPI.Authentication.Model.Dto
 {
     public class UserDto
     {

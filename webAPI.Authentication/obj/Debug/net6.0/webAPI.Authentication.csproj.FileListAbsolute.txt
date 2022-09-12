@@ -1,0 +1,12 @@
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/bin/Debug/net6.0/webAPI.Authentication.deps.json
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/bin/Debug/net6.0/webAPI.Authentication.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/bin/Debug/net6.0/webAPI.Authentication.pdb
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/obj/Debug/net6.0/webAPI.Authentication.csproj.AssemblyReference.cache
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/obj/Debug/net6.0/webAPI.Authentication.GeneratedMSBuildEditorConfig.editorconfig
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/obj/Debug/net6.0/webAPI.Authentication.AssemblyInfoInputs.cache
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/obj/Debug/net6.0/webAPI.Authentication.AssemblyInfo.cs
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/obj/Debug/net6.0/webAPI.Authentication.csproj.CoreCompileInputs.cache
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/obj/Debug/net6.0/webAPI.Authentication.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/obj/Debug/net6.0/refint/webAPI.Authentication.dll
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/obj/Debug/net6.0/webAPI.Authentication.pdb
+/Users/huynguyen/Desktop/webAPI_new/webAPI.Authentication/obj/Debug/net6.0/ref/webAPI.Authentication.dll

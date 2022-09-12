@@ -1,8 +1,7 @@
-namespace webAPI
+namespace webAPI.Entites.Dbset
 {
-    public class User
+    public class User : BaseSuperHero
     {
-        public int Id { get; set; }  
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
         public List<RefreshToken>  RefreshToken { get; set; }  

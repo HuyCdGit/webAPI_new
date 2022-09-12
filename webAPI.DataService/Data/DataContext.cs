@@ -1,10 +1,13 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System;
+using webAPI.Entites.Dbset;
 
-namespace webAPI
+namespace webAPI.DataService.Data
 {
-    public class Datacontext : DbContext
+    public class DataContext : IdentityDbContext
     {
-        public Datacontext(DbContextOptions<Datacontext> options) : base(options) { }
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<SuperHero> SuperHeroes { get; set; }
         public DbSet<Auth> Auths { get; set; }
         public DbSet<User> Users {get; set;}

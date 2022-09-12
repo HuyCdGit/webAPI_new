@@ -1,31 +1,23 @@
 // using Internal;
-using System.Reflection.Emit;
-using System.Net.Mime;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
-using System;
 using webAPI.DataService.IConfiguration;
 using webAPI.Entites.Dbset;
+using webAPI.Authentication;
+using webAPI.Authentication.Model.Dto;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace webAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-
-    public class SupperHeroController : ControllerBase
+    //everyone can be access
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    public class SupperHeroController : BaseController
     {
-        private IUnitOfWork _unitOfWork;
-        //private readonly HeroService _heroService;
-
-        public readonly IMapper _mapper; 
-        public SupperHeroController(
-            IUnitOfWork unitOfWork,
-            IMapper mapper
-        )
+        public SupperHeroController(IUnitOfWork unitOfWork, IMapper mapper) : base(unitOfWork, mapper)
         {
-            _mapper = mapper;
-            _unitOfWork = unitOfWork;
         }
+
         [HttpGet]
         public async Task<IActionResult> GetHero()
         {
@@ -49,7 +41,7 @@ namespace webAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddHero(SuperHeroDto hero)
+        public async Task<IActionResult> AddHero([FromBody]SuperHeroDto hero)
         {
             var _hero = new SuperHero();
             _hero.Name = hero.Name;

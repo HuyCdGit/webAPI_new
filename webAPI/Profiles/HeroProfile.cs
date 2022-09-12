@@ -1,5 +1,6 @@
 using System;
 using AutoMapper;
+using webAPI.Authentication.Model.Dto;
 using webAPI.Entites.Dbset;
 namespace webAPI
 {
